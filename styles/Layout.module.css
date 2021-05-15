@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  width: 100vw;
+
+  height: 100vh;
+
+  position: fixed;
+  background: transparent;
+
+  z-index: 2;
+}
+
+.fullImageContainer,
+.smallImageContainer {
+  position: absolute;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+}
+
+.smallImageContainer {
+  display: none;
+}
+
+.backgroundFilter {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+}
+
+@media (max-width: 800px) {
+  .smallImageContainer {
+    display: inline;
+  }
+  .fullImageContainer {
+    display: none;
+  }
+}

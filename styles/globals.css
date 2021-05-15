@@ -14,3 +14,30 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  width: 100vw;
+
+  height: 100vh;
+
+  position: fixed;
+
+  background: black;
+
+  background-size: cover;
+
+  background-position: 50% 50%;
+
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
+.particlesCanvas {
+  height: 100vh;
+}
+
+#tsparticles {
+  height: 100vh;
+  width: 100vw;
+}
